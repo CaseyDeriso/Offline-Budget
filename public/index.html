@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer ></script>
+  <script src="js/index.js" defer ></script>
+  <script src="js/idb.js" defer ></script>
+
   <title>Budget Tracker</title>
 </head>
 <body>
@@ -41,8 +45,17 @@
     <canvas id="myChart"></canvas>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="js/index.js"></script>
-  <script src="js/idb.js"></script>
 </body>
+
+  <script>
+    (function () {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+        .register("./service-worker.js")
+        .then(() => console.log("Service worker successfully registered!" ))
+        .catch((error) => 
+        console.log("Service worker registration failed: ", error));
+      }
+      })();
+  </script>
 </html>
