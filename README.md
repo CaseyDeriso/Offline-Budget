@@ -8,10 +8,15 @@
 Offline-Budget is a pre-built budget application, for which I was tasked with turning into a progressive web app. Utilizing a manifest.json file, the application can be downloaded as a mobile app. As the name suggests, this application is functional without an internet connection via a service worker which catches https requests and responds with cached files if offline. 
 
 ## Table of Contents:
-* [installation](#Installation)
-* [usage](#Usage)
-* [screenshot](#Screenshot)
-* [credits](#Credits)
+* [Link](#Link)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Screenshot](#Screenshot)
+* [Credits](#Credits)
+
+## Link
+
+[Link to deployed application](https://shrouded-dawn-82555.herokuapp.com/)
 
 
 ## Installation 
